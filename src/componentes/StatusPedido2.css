@@ -1,0 +1,17 @@
+:root {
+    --var-entregue: #01ccff93;
+}
+
+.bolinha-entregue{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #04708b93;
+    background-color: var(--var-entregue); 
+    display: inline-block; 
+    margin-right: 5px;
+}
+
+#pedido-F2{
+    margin-top: 1rem;
+}

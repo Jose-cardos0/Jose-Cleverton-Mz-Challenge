@@ -1,0 +1,35 @@
+:root {
+    --var-greybar:#444444 ;
+    --var-border:#d7d7d7 ;
+}
+
+.navbar1{
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--var-border);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    h1 {
+        color: var(--var-greybar);
+        border-right: 1px solid var(--var-border);
+        padding: 2rem;
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+    .navbar1 {
+
+        h1 {
+            border-right: none;
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    }
+  }
+

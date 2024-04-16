@@ -1,0 +1,50 @@
+
+.container{
+    display: flex;
+    box-sizing: border-box;
+    margin: 1rem;
+    height: auto;
+
+    .subcontainer {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        border: 1px solid var(--var-border);
+        border-radius: 0.8rem;
+        width: 100%;
+        height: auto;
+
+        #container-divs{
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            max-width: 60%;
+            margin: 1rem 0;
+            
+        }
+    }
+
+
+}
+
+@media (max-width: 420px) {
+
+    .container {
+
+        .subcontainer{
+            display: flex;
+            flex-direction: column;
+
+            #container-divs{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .responsiveGrid {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+
+  }

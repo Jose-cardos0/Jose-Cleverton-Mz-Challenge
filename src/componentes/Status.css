@@ -1,0 +1,104 @@
+:root {
+    --var-greybar:#444444 ;
+    --var-border:#d7d7d7 ;
+    --var-pgray:#898d92;
+    --var-linegren:#78cf55;
+    --var-pendente: orange;
+}
+
+
+.containermaster {
+    display: flex;
+    box-sizing: border-box;
+    gap: 4rem;
+    padding: 1.5rem;
+
+    .dadopedido1 {
+        font-weight: 550;
+    }
+
+    .dadopedido {
+        display: flex;
+        margin: 0.5rem 0.5rem 0 0;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .botaoCompra{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.2rem;
+        background-color: transparent;
+        border: 0.2px solid var(--var-linegren);
+        border-radius: 0.2rem;
+        color: var(--var-linegren);
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+
+    .botaoCompra:hover {
+        background-color: var(--var-linegren);
+        color: #fff;
+    }
+
+
+    .bolinha-pendente{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #75470293;
+        background-color: orange; 
+        display: inline-block; 
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .containermaster{
+        display: flex;
+        flex-direction: column;
+
+        .navbar2{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: -3rem;
+
+
+            .respondiveButtons{
+                display: flex;
+                margin-bottom: 3rem;
+                
+                .botaoCompra{
+                    background-color: var(--var-linegren);
+                    color: #fff;
+                    width: 5rem;
+                }
+            }
+
+            .dadopedido{
+                display: flex;
+                align-items: end;
+
+                .bolinha-pendente{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+
+            .pendenteStatus{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        }
+
+
+         
+      
+    }
+}
